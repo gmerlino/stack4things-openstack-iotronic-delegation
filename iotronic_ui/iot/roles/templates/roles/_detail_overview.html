@@ -1,0 +1,20 @@
+{% load i18n sizeformat %}
+
+<div class="detail">
+
+  <h4>{% trans "Info" %}</h4>
+    <hr class="header_rule">
+    <dl class="dl-horizontal">
+      <dt>{% trans "Name" %}</dt>
+      <dd>{{ role.name }}</dd>
+      <dt>{% trans "Permissions" %}</dt>
+      <dd>{{ role.permissions }}</dd>
+      <dt>{% trans "Description" %}</dt>
+      <dd>{{ role.description }}</dd>
+      <dt>{% trans "Creation data" %}</dt>
+      <dd>{{ role.created_at }}</dd>
+      <dt>{% trans "Update data" %}</dt>
+      <dd>{{ role.updated_at }}</dd>
+    </dl>
+</div>
+
